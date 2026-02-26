@@ -1,5 +1,5 @@
 import SectionReveal from "./SectionReveal";
-import { Mail, Phone, Linkedin } from "lucide-react";
+import { Mail, Phone, Linkedin, Github } from "lucide-react";
 
 const links = [
   {
@@ -16,6 +16,11 @@ const links = [
     icon: Linkedin,
     label: "linkedin.com/in/shihuy",
     href: "https://linkedin.com/in/shihuy",
+  },
+  {
+    icon: Github,
+    label: "github.com/youseihuayu-wonderful",
+    href: "https://github.com/youseihuayu-wonderful",
   },
 ];
 

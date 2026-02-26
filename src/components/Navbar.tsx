@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
-import { Moon, Sun, Menu, X } from "lucide-react";
+import { Moon, Sun, Menu, X, Github } from "lucide-react";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -53,6 +53,15 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
+          <a
+            href="https://github.com/youseihuayu-wonderful"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 rounded-lg text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+            aria-label="GitHub"
+          >
+            <Github size={18} />
+          </a>
           {mounted && (
             <button
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
